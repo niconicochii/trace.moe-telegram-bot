@@ -273,11 +273,11 @@ const privateMessageHandler = async (message) => {
   const responding_msg = message.reply_to_message ? message.reply_to_message : message;
   const imageURL = await getImageFromMessage(responding_msg);
   if (!imageURL) {
-    await sendMessage(message.chat.id, "You can Send / Forward anime screenshots to me.");
+    await sendMessage(message.chat.id, "Bro, lu bisa kirim atau teruskan foto screenshoot anime ke gw, trus gw bakal kasih tau lo itu anime apaan 🗿");
     return;
   }
 
-  const bot_message = await sendMessage(message.chat.id, "Searching...", {
+  const bot_message = await sendMessage(message.chat.id, "Tunggu Bentar...", {
     reply_to_message_id: responding_msg.message_id,
   });
 
@@ -309,7 +309,7 @@ const groupMessageHandler = async (message) => {
     // cannot find image from the message mentioning the bot
     await sendMessage(
       message.chat.id,
-      "Mention me in an anime screenshot, I will tell you what anime is that",
+      "Mention gw pada foto screenshot anime, gw bakal kasih tau judul animenya",
       { reply_to_message_id: message.message_id }
     );
     return;
@@ -319,7 +319,7 @@ const groupMessageHandler = async (message) => {
   if (result.isAdult) {
     await sendMessage(
       message.chat.id,
-      "I've found an adult result 😳\nPlease forward it to me via Private Chat 😏",
+      "Anjay... ini anime dewasa 😳\nPC gw bro, trus kirim atau teruskan fotonya ke gw 😏",
       {
         reply_to_message_id: responding_msg.message_id,
       }
