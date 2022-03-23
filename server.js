@@ -273,7 +273,7 @@ const privateMessageHandler = async (message) => {
   const responding_msg = message.reply_to_message ? message.reply_to_message : message;
   const imageURL = await getImageFromMessage(responding_msg);
   if (!imageURL) {
-    await sendMessage(message.chat.id, "Kirim atau teruskan foto screenshot anime ke gw 🗿 gw bakal kasih tau lo itu anime apaan 🗿");
+    await sendMessage(message.chat.id, "Sini kirim/teruskan foto screenshot anime ke gw bro, gw bakal kasih tau lo judul animenya 🗿");
     return;
   }
 
@@ -319,7 +319,7 @@ const groupMessageHandler = async (message) => {
   if (result.isAdult) {
     await sendMessage(
       message.chat.id,
-      "Anjay... ini anime dewasa 😳\nPM bro, gw bakal kasih tau judulnya lewat PM aja, malu soalnya 🗿",
+      "Anjay... ini anime dewasa bro 😳\nPM bro, gw bakal kasih tau lo judulnya lewat PM aja, malu soalnya anjay 🗿",
       {
         reply_to_message_id: responding_msg.message_id,
       }
