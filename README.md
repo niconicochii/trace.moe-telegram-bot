@@ -55,7 +55,7 @@ ANILIST_API_URL=      # (optional) Default: https://graphql.anilist.co/
 
 ### Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/soruly/trace.moe-telegram-bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/niconicochii/trace.moe-telegram-bot)
 
 ### Deploy on Railway
 
