@@ -273,7 +273,7 @@ const privateMessageHandler = async (message) => {
   const responding_msg = message.reply_to_message ? message.reply_to_message : message;
   const imageURL = await getImageFromMessage(responding_msg);
   if (!imageURL) {
-    await sendMessage(message.chat.id, "Sini kirim/teruskan foto screenshot anime ke gw bro, gw bakal kasih tau lo judul animenya 🗿");
+    await sendMessage(message.chat.id, "Sini kirim atau teruskan foto screenshot anime ke gw bro, gw bakal kasih tau lo judul animenya 🗿");
     return;
   }
 
